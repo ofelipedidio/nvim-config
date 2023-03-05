@@ -179,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kali/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-lastplace"] = {
+    loaded = true,
+    path = "/home/kali/.local/share/nvim/site/pack/packer/start/vim-lastplace",
+    url = "https://github.com/farmergreg/vim-lastplace"
   }
 }
 
