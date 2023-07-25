@@ -3,36 +3,11 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  --'tsserver',
-  --'eslint',
-  --'lua-language-server',
   'rust_analyzer',
-  'pyright'
 })
 
 -- Fix Undefined global 'vim'
-lsp.configure('lua-language-server', {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
-        }
-    }
-})
-
-lsp.configure('pyright', {
-	settings = {
-		python = {
-			analysis = {
-				autoSearchPaths = true,
-				diagnosticMode = "workspace",
-				useLibraryCodeForTypes = true,
-                typeCheckingMode = "basic"
-			},
-		},
-	}
-})
+lsp.nvim_workspace()
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -80,4 +55,3 @@ lsp.setup()
 vim.diagnostic.config({
     virtual_text = true
 })
-
