@@ -10,12 +10,14 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use {
+      'briones-gabriel/darcula-solid.nvim',
+      requires = "rktjmp/lush.nvim" 
+  }
+
   use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
+      'rose-pine/neovim',
+      as = 'rose-pine',
   })
 
   use({
@@ -71,5 +73,5 @@ return require('packer').startup(function(use)
   use("eandrju/cellular-automaton.nvim")
   use("laytan/cloak.nvim")
 
-  use('tikhomirov/vim-glsl')
+-- # use('tikhomirov/vim-glsl')
 end)
