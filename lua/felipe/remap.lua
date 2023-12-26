@@ -29,7 +29,7 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- Increase number (on Tmux)
-vim.keymap.set("n", "<leader><leader>a", "<C-a>")
+vim.keymap.set({"n", "v"}, "<leader><leader>a", "<C-a>")
 
 -- Delete into black hole register
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
