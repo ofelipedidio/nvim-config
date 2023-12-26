@@ -35,7 +35,7 @@ vim.keymap.set({"n", "v"}, "<leader><leader>a", "<C-a>")
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- Format file
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+-- vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- Jump to next/previous error
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
