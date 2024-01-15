@@ -57,8 +57,4 @@ return require('packer').startup(function(use)
                 {'rafamadriz/friendly-snippets'},
             }
         }
-
-        use("github/copilot.vim")
-
-        -- # use('tikhomirov/vim-glsl')
     end)

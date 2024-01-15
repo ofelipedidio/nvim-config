@@ -3,12 +3,11 @@ local ls = require("luasnip")
 
 lsp.preset("recommended")
 
+-- Fix Undefined global 'vim'
+lsp.nvim_workspace()
 lsp.ensure_installed({
   'rust_analyzer',
 })
-
--- Fix Undefined global 'vim'
-lsp.nvim_workspace()
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
