@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
 
     use { 'briones-gabriel/darcula-solid.nvim', requires = "rktjmp/lush.nvim" }
 
-    -- use({ 'rose-pine/neovim', as = 'rose-pine', })
+    use({ 'rose-pine/neovim', as = 'rose-pine', })
 
     use({
         "folke/trouble.nvim",

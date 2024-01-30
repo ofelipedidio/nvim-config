@@ -1,2 +1,2 @@
-vim.cmd 'colorscheme darcula-solid'
+vim.cmd 'colorscheme rose-pine'
 vim.cmd 'set termguicolors'
